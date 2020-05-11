@@ -155,7 +155,7 @@ def download_llvm_preconfigured(rctx):
     if basename not in _llvm_distributions:
         fail("Unknown LLVM release: %s\nPlease ensure file name is correct." % basename)
 
-    url_suffix = "{0}/{1}".format(llvm_version, basename).replace("+", "%2B")
+    url_suffix = "{0}/{1}".format(llvm_version, basename).replace("+", "%2b")
     urls = [
         "{0}{1}".format(_llvm_distributions_base_url[llvm_version], url_suffix)
     ]
